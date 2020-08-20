@@ -1,2 +1,2 @@
-# spring-cloud-demo
-Spring Cloud Demo
+# spring-cloud-sample
+Spring Cloud Sample
