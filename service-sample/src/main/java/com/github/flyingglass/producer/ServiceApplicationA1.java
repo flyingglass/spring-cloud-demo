@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.ApplicationContext;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
@@ -20,12 +19,13 @@ import java.net.UnknownHostException;
 @EnableSwagger2Doc
 @Slf4j
 @EnableFeignClients
-public class ProducerApplicationA2 {
+public class ServiceApplicationA1 {
 
 	public static void main(String[] args) throws UnknownHostException {
-		System.setProperty("spring.profiles.active", "a2");
+		System.setProperty("spring.profiles.active", "a1");
 
-		Environment env = SpringApplication.run(ProducerApplicationA2.class, args).getEnvironment();
+
+		Environment env = SpringApplication.run(ServiceApplicationA1.class, args).getEnvironment();
 
 		log.info(
 				"\n----------------------------------------------------------\n\t"

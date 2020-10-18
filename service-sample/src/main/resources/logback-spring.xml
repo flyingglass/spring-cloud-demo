@@ -3,17 +3,17 @@
 
     <!--application.yml 传送参数, 不能使用logback 自带的<property>标签-->
     <!--TODO spring.application.name must in bootstrap.yml-->
-    <springProperty scope="context" name="logName" source="spring.application.name" defaultValue="spring-cloud-sample"/>
+<!--    <springProperty scope="context" name="logName" source="spring.application.name" defaultValue="spring-cloud-sample"/>-->
+    <springProperty scope="context" name="logName" source="logback.logName" defaultValue="spring-cloud-sample"/>
     <springProperty scope="context" name="logDir" source="logback.logDir" defaultValue="/var/log/spring-cloud-sample"/>
 
     <!--<property name="logback.logDir" value="/mnt/data01/logs/backend-web-service"/>-->
     <!--<property name="logback.logName" value="backend"/>-->
 
-    <contextName>${logName}</contextName>
-
+<!--    <contextName>${logName}</contextName>-->
 
     <!--控制台样式根据场景区分-->
-    <springProfile name="default,dev">
+    <springProfile name="default,a1,a2,b1">
         <!--<pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>-->
 <!--        <property name="CONSOLE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger %line : %msg%n"/>-->
         <property name="CONSOLE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{36}) %highlight([%line]) : %cyan(%msg%n)"/>

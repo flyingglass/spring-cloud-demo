@@ -1,9 +1,13 @@
 package com.github.flyingglass.producer.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author fly
@@ -11,11 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-public class TestController {
+@ConditionalOnProperty(name = "spring.application.name", havingValue = "service-a")
+public class AFeginController {
+
+    @Resource
+    RestInfo restInfo;
 
     @GetMapping(path = "/rest/{value}")
     public String rest(@PathVariable(value = "value") String value) {
 
+        value = restInfo.info(value);
         log.info("调用路径：{}", value);
 
         return value;
@@ -23,7 +32,7 @@ public class TestController {
 
     @GetMapping(value = "/hello")
     public String hello() {
-        return "Get Method, Return Hello World!";
+        return restInfo.info("Get Method, Return Hello World!");
     }
 
 }
