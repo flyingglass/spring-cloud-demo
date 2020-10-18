@@ -1,6 +1,6 @@
-package com.github.flyingglass.producer.feign;
+package com.github.flyingglass.service.feign;
 
-import com.github.flyingglass.producer.config.FeignConfig;
+import com.github.flyingglass.service.config.FeignConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

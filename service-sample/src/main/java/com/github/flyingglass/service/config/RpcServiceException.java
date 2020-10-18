@@ -1,4 +1,4 @@
-package com.github.flyingglass.producer.config;
+package com.github.flyingglass.service.config;
 
 import com.netflix.hystrix.exception.HystrixBadRequestException;
 

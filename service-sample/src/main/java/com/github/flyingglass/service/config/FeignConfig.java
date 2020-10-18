@@ -1,4 +1,4 @@
-package com.github.flyingglass.producer.config;
+package com.github.flyingglass.service.config;
 
 import feign.Logger;
 import feign.codec.ErrorDecoder;

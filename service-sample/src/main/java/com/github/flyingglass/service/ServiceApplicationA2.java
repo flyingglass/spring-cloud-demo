@@ -1,4 +1,4 @@
-package com.github.flyingglass.producer;
+package com.github.flyingglass.service;
 
 import com.spring4all.swagger.EnableSwagger2Doc;
 import lombok.extern.slf4j.Slf4j;
