@@ -9,7 +9,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>producer-sample</artifactId>
+	<artifactId>service-sample</artifactId>
     <packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 	<description>Producer Sample project for Spring Eureka</description>

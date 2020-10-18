@@ -1,4 +1,4 @@
-package com.github.flyingglass.producer.config;
+package com.github.flyingglass.service.config;
 
 import feign.Feign;
 import okhttp3.ConnectionPool;
