@@ -36,22 +36,6 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- OKHttp 对 Feign 支持 -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.github.openfeign</groupId>
-			<artifactId>feign-okhttp</artifactId>
-		</dependency>
-
-		<!--        kafka elk-->
-		<dependency>
-			<groupId>com.github.danielwegener</groupId>
-			<artifactId>logback-kafka-appender</artifactId>
-			<version>${version.logback-kafka-appender}</version>
-		</dependency>
 
 
 	</dependencies>

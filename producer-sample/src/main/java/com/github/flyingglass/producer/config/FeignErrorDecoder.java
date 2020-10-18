@@ -1,4 +1,4 @@
-package com.github.flyingglass.consumer.config;
+package com.github.flyingglass.producer.config;
 
 import feign.FeignException;
 import feign.Response;
