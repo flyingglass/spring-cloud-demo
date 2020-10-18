@@ -17,8 +17,8 @@ import java.net.UnknownHostException;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableSwagger2Doc
-@Slf4j
 @EnableFeignClients
+@Slf4j
 public class ServiceApplicationA1 {
 
 	public static void main(String[] args) throws UnknownHostException {

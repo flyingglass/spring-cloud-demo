@@ -32,7 +32,7 @@ public class AFeginController {
 
     @GetMapping(value = "/hello")
     public String hello() {
-        return restInfo.info("Get Method, Return Hello World!");
+        return "Get Method, Return Hello World!";
     }
 
 }
