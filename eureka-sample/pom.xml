@@ -10,7 +10,7 @@
 	</parent>
 	<artifactId>eureka-sample</artifactId>
     <packaging>jar</packaging>
-	<name>demo</name>
+	<name>${project.artifactId}</name>
 	<description>Demo project for Spring Eureka</description>
 
 	<dependencies>
