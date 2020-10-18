@@ -31,7 +31,7 @@ public class ZuulApplication {
 				InetAddress.getLocalHost().getHostAddress(), env.getProperty("server.port")
 		);
 
-		log.info(env.getProperty("eureka.instance.ip-address"));
+//		log.info(env.getProperty("eureka.instance.ip-address"));
 
 
 	}
