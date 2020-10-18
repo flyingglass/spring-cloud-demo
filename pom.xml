@@ -18,7 +18,7 @@
 
         <version.spring-boot>2.1.5.RELEASE</version.spring-boot>
         <version.spring-cloud>Greenwich.SR1</version.spring-cloud>
-        <version.spring-boot-admin>2.3.0</version.spring-boot-admin>
+        <version.spring-boot-admin>2.1.5</version.spring-boot-admin>
 
         <version.logback-kafka-appender>0.2.0-RC2</version.logback-kafka-appender>
         <version.swagger-butler-core>2.0.0</version.swagger-butler-core>

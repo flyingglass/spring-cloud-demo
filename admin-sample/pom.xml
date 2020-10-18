@@ -19,6 +19,11 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-web</artifactId>-->
+<!--		</dependency>-->
+
 		<!-- 2.Spring Boot Admin监控服务器 -->
 		<dependency>
 			<groupId>de.codecentric</groupId>
