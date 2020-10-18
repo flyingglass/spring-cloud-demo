@@ -18,12 +18,15 @@
 
         <version.spring-boot>2.3.3.RELEASE</version.spring-boot>
         <version.spring-cloud>Hoxton.RELEASE</version.spring-cloud>
+        <version.logback-kafka-appender>0.2.0-RC2</version.logback-kafka-appender>
+        <version.swagger-butler-core>2.0.0</version.swagger-butler-core>
+
     </properties>
 
     <modules>
         <module>eureka-sample</module>
         <module>gateway-sample</module>
-        <module>websocket-sample</module>
+        <module>zuul-sample</module>
     </modules>
 
     <dependencyManagement>
@@ -72,6 +75,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${version.spring-boot}</version>
+            </plugin>
+            <plugin>
+                <!--                配置后idea不会reset为jdk1.5-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
             </plugin>
         </plugins>
     </build>

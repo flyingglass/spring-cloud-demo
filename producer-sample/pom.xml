@@ -9,11 +9,10 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>websocket-sample</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>producer-sample</artifactId>
     <packaging>jar</packaging>
 	<name>${project.artifactId}</name>
-	<description>Demo project for Spring Eureka</description>
+	<description>Producer Sample project for Spring Eureka</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -30,10 +29,6 @@
 			<groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-websocket</artifactId>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -41,14 +36,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>6</source>
-					<target>6</target>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

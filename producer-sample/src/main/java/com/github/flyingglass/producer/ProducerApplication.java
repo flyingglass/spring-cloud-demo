@@ -1,4 +1,4 @@
-package com.github.flyingglass.websocket;
+package com.github.flyingglass.producer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +9,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class WebsocketApplication {
+public class ProducerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebsocketApplication.class, args);
+		SpringApplication.run(ProducerApplication.class, args);
 	}
 
 }
