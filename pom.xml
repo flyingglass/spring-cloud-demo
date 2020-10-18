@@ -28,8 +28,7 @@
         <module>eureka-sample</module>
         <module>gateway-sample</module>
         <module>zuul-sample</module>
-        <module>producer-sample</module>
-        <module>consumer-sample</module>
+        <module>service-sample</module>
     </modules>
 
     <dependencyManagement>
